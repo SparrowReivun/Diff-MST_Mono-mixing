@@ -72,13 +72,21 @@ if __name__ == "__main__":
         #     "tracks": "/Users/svanka/Downloads//diffmst-examples/song1/BenFlowers_Ecstasy_Full/",
         #     "ref": "/Users/svanka/Downloads//diffmst-examples/song1/ref/_Feel it all Around_ by Washed Out (Portlandia Theme)_01.wav",
         # },
-        "It's_not_over_26track": {
-            "tracks": "Diff-MST/2025Nov28test/It's_not_over_26track",
-            "ref": "Diff-MST/2025Nov28test/DumberByTheMinute_Full_Preview_21s.wav",
-        },
-        "It's_not_over": {
+        # "It's_not_over_26track": {
+        #     "tracks": "Diff-MST/2025Nov28test/It's_not_over_26track",
+        #     "ref": "Diff-MST/2025Nov28test/DumberByTheMinute_Full_Preview_21s.wav",
+        # },
+        "It's_not_over_nopan": {
             "tracks": "Diff-MST/2025Nov28test/It's_not_over",
             "ref": "Diff-MST/2025Nov28test/DumberByTheMinute_Full_Preview_21s.wav",
+        },
+        "It's_not_over_nopan_align_groundtruth": {
+            "tracks": "Diff-MST/2025Nov28test/It's_not_over",
+            "ref": "Diff-MST/2025Nov28test/Daughtry_Chorus_SubgroupGain.wav",
+        },        
+        "It's_not_over_26track_align_to_groundtruth_nopan": {
+            "tracks": "Diff-MST/2025Nov28test/It's_not_over_26track",
+            "ref": "Diff-MST/2025Nov28test/Daughtry_Chorus_SubgroupGain.wav",
         },
     }
     # why these weights?

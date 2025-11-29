@@ -55,7 +55,7 @@ def run_diffmst(
     """
     # ------ defaults ------
     use_track_input_fader = True
-    use_track_panner = True
+    use_track_panner = False
     use_track_eq = True
     use_track_compressor = True
     use_fx_bus = False
