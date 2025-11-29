@@ -55,8 +55,8 @@ if __name__ == "__main__":
     methods = {
         "diffmst-16": {
             "model": load_diffmst(
-                "/Users/svanka/Downloads/b4naquji/config.yaml",
-                "/Users/svanka/Downloads/b4naquji/checkpoints/epoch=191-step=626608.ckpt",
+                "/data/home/eey818/Diff-MST/configs/models/unpaired+feat.yaml",
+                "/data/scratch/eey818/diffmst_m2_t16/DiffMST/vc71fwnc/checkpoints/epoch=117-step=1180000.ckpt",
             ),
             "func": run_diffmst,
         },
@@ -76,9 +76,9 @@ if __name__ == "__main__":
         #     "tracks": "/Users/svanka/Downloads//diffmst-examples/song2/Kat Wright_By My Side/",
         #     "ref": "/Users/svanka/Downloads//diffmst-examples/song2/ref/The Dip - Paddle To The Stars (Lyric Video)_01.wav",
         # },
-        "haunted-aged": {
-            "tracks": "/Users/svanka/Downloads//diffmst-examples/song3/Titanium_HauntedAge_Full/",
-            "ref": "/Users/svanka/Downloads//diffmst-examples/song3/ref/Architects - _Doomsday__01.wav",
+        "SYQNfull": {
+            "tracks": "/data/home/eey818/Raw_multitracks_full_length_mono",
+            "ref": "/data/home/eey818/SYQNSuBChorus160s.wav",
         },
     }
     loss = AudioFeatureLoss([0.1,0.001,1.0,1.0,0.1], 44100)

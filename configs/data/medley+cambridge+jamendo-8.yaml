@@ -2,10 +2,10 @@ data:
   class_path: mst.dataloader.MultitrackDataModule
   init_args:
     track_root_dirs: 
-      - /import/c4dm-datasets-ext/mixing-secrets/
-      - /import/c4dm-datasets/
+      - /data/scratch/eey818/mixing-secrets/
+      - /data/scratch/eey818/
     mix_root_dirs:  
-      - /import/c4dm-datasets-ext/mtg-jamendo
+      - /data/scratch/eey818/mtg-jamendo
     metadata_files: 
       - ./data/cambridge.yaml 
       - ./data/medley.yaml

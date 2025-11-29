@@ -172,8 +172,19 @@ def run_diffmst(
         pred_master_bus_param_dict,
     )
 
+# Oct change gpu
 
-def load_diffmst(config_path: str, ckpt_path: str, map_location: str = "cpu"):
+# def load_diffmst(config_path: str, ckpt_path: str, map_location: str = "cpu"):
+#     import torch
+#     import yaml
+#     from importlib import import_module
+
+    # # --- 新增：自动检测 CUDA 并覆盖 map_location ---
+    # if map_location == "cpu" and torch.cuda.is_available():
+    #     map_location = "cuda:0"
+    # print(f"[load_diffmst] Using map_location={map_location}")
+    # --- 原有逻辑保持不变 ---
+def load_diffmst(config_path: str, ckpt_path: str, map_location: str = "cuda"):
     with open(config_path) as f:
         config = yaml.safe_load(f)
 

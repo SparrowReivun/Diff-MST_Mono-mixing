@@ -1,0 +1,2520 @@
+/data/home/eey818/Diff-MST/mst/utils.py:235: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt_path, map_location=map_location)
+SYQNfull
+torch.Size([2, 7056000]) 44100
+Found 15 tracks.
+0 mono__damage.wav torch.Size([1, 11282251]) 44100 -25.22768609043005
+1 mono__Ample Metal E 01.wav torch.Size([1, 11282251]) 44100 -27.107883251425125
+2 mono__tom.wav torch.Size([1, 11282251]) 44100 -24.293067409646614
+3 mono__xiao.wav torch.Size([1, 11282251]) 44100 -24.054751218143192
+4 mono__bass.wav torch.Size([1, 11282251]) 44100 -24.03557375565617
+5 mono__kick.wav torch.Size([1, 11282251]) 44100 -24.05113074334197
+6 mono__pipa.wav torch.Size([1, 11282251]) 44100 -24.054361089297846
+7 mono__Ample Metal E 02.wav torch.Size([1, 11282251]) 44100 -25.509586358743714
+8 mono__yangqin.wav torch.Size([1, 11282251]) 44100 -24.87408302355521
+9 mono__hihat+cym.wav torch.Size([1, 11282251]) 44100 -24.2799190208634
+10 mono__pn.wav torch.Size([1, 11282251]) 44100 -26.12930978304794
+11 mono__SYQNSuB_guqin_erhu_kontact.wav torch.Size([1, 11289600]) 44100 -23.830462608053853
+12 mono__strings full.wav torch.Size([1, 11282251]) 44100 -26.275033912707155
+13 mono__guzheng.wav torch.Size([1, 11282251]) 44100 -26.065340109741506
+14 mono__sn.wav torch.Size([1, 11282251]) 44100 -24.62550347327441
+track_num_sets 12
+ref_num_sets 8
+track-0-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  1.67it/s] 50%|█████     | 2/4 [00:00<00:00,  2.70it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.58it/s]100%|██████████| 4/4 [00:01<00:00,  3.84it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.815024125470314
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(4.0457453e-05, dtype=float32), 'mix-crest_factor': array(2.0981184e-07, dtype=float32), 'mix-stereo_width': array(0.02549496, dtype=float32), 'mix-stereo_imbalance': array(1.5126596e-05, dtype=float32), 'mix-barkspectrum': array(0.23305936, dtype=float32), 'net_AF_loss': array(0.25861013, dtype=float32)}
+min_AF_loss 0.25861013
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-0-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00029724, dtype=float32), 'mix-crest_factor': array(0.01347291, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.1282, dtype=float32), 'net_AF_loss': array(34.183437, dtype=float32)}
+min_AF_loss 0.25861013
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-0-lufs--16
+track-0-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.12it/s] 50%|█████     | 2/4 [00:00<00:00,  5.09it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.05it/s]100%|██████████| 4/4 [00:00<00:00,  6.27it/s]100%|██████████| 4/4 [00:00<00:00,  5.77it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.827876668377309
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(4.0985797e-05, dtype=float32), 'mix-crest_factor': array(1.5481909e-08, dtype=float32), 'mix-stereo_width': array(0.02546033, dtype=float32), 'mix-stereo_imbalance': array(1.2113061e-05, dtype=float32), 'mix-barkspectrum': array(0.23264495, dtype=float32), 'net_AF_loss': array(0.2581584, dtype=float32)}
+min_AF_loss 0.2581584
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-1-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00029751, dtype=float32), 'mix-crest_factor': array(0.01349061, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12893, dtype=float32), 'net_AF_loss': array(34.18418, dtype=float32)}
+min_AF_loss 0.2581584
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-1-lufs--16
+track-0-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.75it/s] 50%|█████     | 2/4 [00:00<00:00,  5.93it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.68it/s]100%|██████████| 4/4 [00:00<00:00,  6.81it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.81586541966722
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(4.0385134e-05, dtype=float32), 'mix-crest_factor': array(2.4533685e-07, dtype=float32), 'mix-stereo_width': array(0.02549847, dtype=float32), 'mix-stereo_imbalance': array(1.4806197e-05, dtype=float32), 'mix-barkspectrum': array(0.23310654, dtype=float32), 'net_AF_loss': array(0.25866044, dtype=float32)}
+min_AF_loss 0.2581584
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-1-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00029724, dtype=float32), 'mix-crest_factor': array(0.01347291, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.1282, dtype=float32), 'net_AF_loss': array(34.183437, dtype=float32)}
+min_AF_loss 0.2581584
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-1-lufs--16
+track-0-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.35it/s] 50%|█████     | 2/4 [00:00<00:00,  5.27it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.35it/s]100%|██████████| 4/4 [00:00<00:00,  6.39it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.825923124343031
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(4.1157917e-05, dtype=float32), 'mix-crest_factor': array(9.802693e-08, dtype=float32), 'mix-stereo_width': array(0.0254523, dtype=float32), 'mix-stereo_imbalance': array(1.2790356e-05, dtype=float32), 'mix-barkspectrum': array(0.23253806, dtype=float32), 'net_AF_loss': array(0.2580444, dtype=float32)}
+min_AF_loss 0.2580444
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00029751, dtype=float32), 'mix-crest_factor': array(0.01349061, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12893, dtype=float32), 'net_AF_loss': array(34.18418, dtype=float32)}
+min_AF_loss 0.2580444
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-3-lufs--16
+track-0-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.16it/s] 50%|█████     | 2/4 [00:00<00:00,  4.48it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.89it/s]100%|██████████| 4/4 [00:00<00:00,  5.48it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.815153172396498
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(4.0447732e-05, dtype=float32), 'mix-crest_factor': array(2.1691285e-07, dtype=float32), 'mix-stereo_width': array(0.02549567, dtype=float32), 'mix-stereo_imbalance': array(1.50885435e-05, dtype=float32), 'mix-barkspectrum': array(0.23306778, dtype=float32), 'net_AF_loss': array(0.2586192, dtype=float32)}
+min_AF_loss 0.2580444
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00029724, dtype=float32), 'mix-crest_factor': array(0.01347291, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.1282, dtype=float32), 'net_AF_loss': array(34.183437, dtype=float32)}
+min_AF_loss 0.2580444
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-3-lufs--16
+track-0-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.81it/s] 50%|█████     | 2/4 [00:00<00:00,  4.59it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.14it/s]100%|██████████| 4/4 [00:00<00:00,  4.89it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.824816171920626
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(4.125298e-05, dtype=float32), 'mix-crest_factor': array(9.845819e-08, dtype=float32), 'mix-stereo_width': array(0.02544812, dtype=float32), 'mix-stereo_imbalance': array(1.3110594e-05, dtype=float32), 'mix-barkspectrum': array(0.2324895, dtype=float32), 'net_AF_loss': array(0.2579921, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00029751, dtype=float32), 'mix-crest_factor': array(0.01349061, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.128933, dtype=float32), 'net_AF_loss': array(34.184185, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-0-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.42it/s] 50%|█████     | 2/4 [00:00<00:00,  5.48it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.41it/s]100%|██████████| 4/4 [00:00<00:00,  6.70it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.815852617057143
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(4.038812e-05, dtype=float32), 'mix-crest_factor': array(2.4495844e-07, dtype=float32), 'mix-stereo_width': array(0.02549825, dtype=float32), 'mix-stereo_imbalance': array(1.4810039e-05, dtype=float32), 'mix-barkspectrum': array(0.23310022, dtype=float32), 'net_AF_loss': array(0.2586539, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00029724, dtype=float32), 'mix-crest_factor': array(0.01347291, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.1282, dtype=float32), 'net_AF_loss': array(34.183437, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-0-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+torch.Size([1, 9, 262144]) torch.Size([1, 9, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.59it/s] 50%|█████     | 2/4 [00:00<00:00,  5.30it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.47it/s]100%|██████████| 4/4 [00:00<00:00,  6.39it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.826746865519265
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(4.1088613e-05, dtype=float32), 'mix-crest_factor': array(5.199405e-08, dtype=float32), 'mix-stereo_width': array(0.02545556, dtype=float32), 'mix-stereo_imbalance': array(1.2484551e-05, dtype=float32), 'mix-barkspectrum': array(0.2325836, dtype=float32), 'net_AF_loss': array(0.2580928, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.336842487602581
+{'track_start_idx': 2822400, 'track_stop_idx': 3263400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00029751, dtype=float32), 'mix-crest_factor': array(0.0134906, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12893, dtype=float32), 'net_AF_loss': array(34.18418, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.81it/s] 50%|█████     | 2/4 [00:00<00:00,  5.19it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.24it/s]100%|██████████| 4/4 [00:00<00:00,  6.11it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.947329223343424
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00023546, dtype=float32), 'mix-crest_factor': array(0.00063772, dtype=float32), 'mix-stereo_width': array(0.00941272, dtype=float32), 'mix-stereo_imbalance': array(0.02954816, dtype=float32), 'mix-barkspectrum': array(0.274924, dtype=float32), 'net_AF_loss': array(0.31475806, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00040277, dtype=float32), 'mix-crest_factor': array(0.05715692, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.12693, dtype=float32), 'net_AF_loss': array(34.225956, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.18it/s] 50%|█████     | 2/4 [00:00<00:00,  4.57it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.76it/s]100%|██████████| 4/4 [00:00<00:00,  5.43it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.958171538991882
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00023669, dtype=float32), 'mix-crest_factor': array(0.00068842, dtype=float32), 'mix-stereo_width': array(0.00938086, dtype=float32), 'mix-stereo_imbalance': array(0.02966563, dtype=float32), 'mix-barkspectrum': array(0.2743056, dtype=float32), 'net_AF_loss': array(0.3142772, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00040309, dtype=float32), 'mix-crest_factor': array(0.05719313, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12767, dtype=float32), 'net_AF_loss': array(34.22673, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.37it/s] 50%|█████     | 2/4 [00:00<00:00,  5.09it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.37it/s]100%|██████████| 4/4 [00:00<00:00,  6.25it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.947465338891487
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00023528, dtype=float32), 'mix-crest_factor': array(0.0006337, dtype=float32), 'mix-stereo_width': array(0.00941999, dtype=float32), 'mix-stereo_imbalance': array(0.02950903, dtype=float32), 'mix-barkspectrum': array(0.27499217, dtype=float32), 'net_AF_loss': array(0.31479016, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00040277, dtype=float32), 'mix-crest_factor': array(0.05715692, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.12693, dtype=float32), 'net_AF_loss': array(34.225956, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.77it/s] 50%|█████     | 2/4 [00:00<00:00,  5.36it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.40it/s]100%|██████████| 4/4 [00:00<00:00,  6.52it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.958166579351666
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00023645, dtype=float32), 'mix-crest_factor': array(0.00067794, dtype=float32), 'mix-stereo_width': array(0.00939136, dtype=float32), 'mix-stereo_imbalance': array(0.02960838, dtype=float32), 'mix-barkspectrum': array(0.27440217, dtype=float32), 'net_AF_loss': array(0.3143163, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00040309, dtype=float32), 'mix-crest_factor': array(0.05719313, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12767, dtype=float32), 'net_AF_loss': array(34.22673, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.13it/s] 50%|█████     | 2/4 [00:00<00:00,  5.51it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.64it/s]100%|██████████| 4/4 [00:00<00:00,  6.63it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.947318989411345
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00023546, dtype=float32), 'mix-crest_factor': array(0.00063778, dtype=float32), 'mix-stereo_width': array(0.00941269, dtype=float32), 'mix-stereo_imbalance': array(0.02954931, dtype=float32), 'mix-barkspectrum': array(0.27492437, dtype=float32), 'net_AF_loss': array(0.3147596, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00040277, dtype=float32), 'mix-crest_factor': array(0.05715692, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.12693, dtype=float32), 'net_AF_loss': array(34.225956, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.97it/s] 50%|█████     | 2/4 [00:00<00:00,  5.16it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.36it/s]100%|██████████| 4/4 [00:00<00:00,  6.08it/s]100%|██████████| 4/4 [00:00<00:00,  5.73it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.957657798123781
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00023666, dtype=float32), 'mix-crest_factor': array(0.00068201, dtype=float32), 'mix-stereo_width': array(0.00938377, dtype=float32), 'mix-stereo_imbalance': array(0.02964933, dtype=float32), 'mix-barkspectrum': array(0.274345, dtype=float32), 'net_AF_loss': array(0.31429678, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00040309, dtype=float32), 'mix-crest_factor': array(0.05719313, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12767, dtype=float32), 'net_AF_loss': array(34.22673, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.15it/s] 50%|█████     | 2/4 [00:00<00:00,  5.52it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.53it/s]100%|██████████| 4/4 [00:00<00:00,  6.60it/s]100%|██████████| 4/4 [00:00<00:00,  6.12it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.947494727909627
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00023551, dtype=float32), 'mix-crest_factor': array(0.0006415, dtype=float32), 'mix-stereo_width': array(0.00940978, dtype=float32), 'mix-stereo_imbalance': array(0.02956458, dtype=float32), 'mix-barkspectrum': array(0.2748927, dtype=float32), 'net_AF_loss': array(0.31474406, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00040277, dtype=float32), 'mix-crest_factor': array(0.05715692, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.12693, dtype=float32), 'net_AF_loss': array(34.225956, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-1-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+torch.Size([1, 11, 262144]) torch.Size([1, 11, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.62it/s] 50%|█████     | 2/4 [00:00<00:00,  5.03it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.19it/s]100%|██████████| 4/4 [00:00<00:00,  5.95it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -9.957470344603975
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00023643, dtype=float32), 'mix-crest_factor': array(0.00067614, dtype=float32), 'mix-stereo_width': array(0.00939433, dtype=float32), 'mix-stereo_imbalance': array(0.02959113, dtype=float32), 'mix-barkspectrum': array(0.27445203, dtype=float32), 'net_AF_loss': array(0.31435007, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -18.172956152067115
+{'track_start_idx': 3263400, 'track_stop_idx': 3704400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00040309, dtype=float32), 'mix-crest_factor': array(0.05719312, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.12767, dtype=float32), 'net_AF_loss': array(34.22673, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.14it/s] 50%|█████     | 2/4 [00:00<00:00,  3.61it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.08it/s]100%|██████████| 4/4 [00:00<00:00,  4.23it/s]100%|██████████| 4/4 [00:00<00:00,  4.01it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.158556849817725
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.000566, dtype=float32), 'mix-crest_factor': array(0.01227728, dtype=float32), 'mix-stereo_width': array(0.01259304, dtype=float32), 'mix-stereo_imbalance': array(0.00396842, dtype=float32), 'mix-barkspectrum': array(0.36495325, dtype=float32), 'net_AF_loss': array(0.394358, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00057651, dtype=float32), 'mix-crest_factor': array(0.19511268, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.12716, dtype=float32), 'net_AF_loss': array(34.364315, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  6.81it/s] 50%|█████     | 2/4 [00:00<00:00,  6.67it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.45it/s]100%|██████████| 4/4 [00:00<00:00,  6.59it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.163932996500558
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00056648, dtype=float32), 'mix-crest_factor': array(0.01233289, dtype=float32), 'mix-stereo_width': array(0.01262462, dtype=float32), 'mix-stereo_imbalance': array(0.00398386, dtype=float32), 'mix-barkspectrum': array(0.3649812, dtype=float32), 'net_AF_loss': array(0.39448905, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00057688, dtype=float32), 'mix-crest_factor': array(0.1951793, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.127872, dtype=float32), 'net_AF_loss': array(34.365093, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.54it/s] 50%|█████     | 2/4 [00:00<00:00,  2.99it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.87it/s]100%|██████████| 4/4 [00:00<00:00,  4.27it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.158574984552383
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.000566, dtype=float32), 'mix-crest_factor': array(0.0122782, dtype=float32), 'mix-stereo_width': array(0.0125938, dtype=float32), 'mix-stereo_imbalance': array(0.00396727, dtype=float32), 'mix-barkspectrum': array(0.36495104, dtype=float32), 'net_AF_loss': array(0.3943563, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00057651, dtype=float32), 'mix-crest_factor': array(0.19511268, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.12716, dtype=float32), 'net_AF_loss': array(34.364315, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.30it/s] 50%|█████     | 2/4 [00:00<00:00,  3.94it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.60it/s]100%|██████████| 4/4 [00:00<00:00,  5.50it/s]100%|██████████| 4/4 [00:00<00:00,  4.85it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.163916808063211
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00056648, dtype=float32), 'mix-crest_factor': array(0.01233248, dtype=float32), 'mix-stereo_width': array(0.01262481, dtype=float32), 'mix-stereo_imbalance': array(0.0039835, dtype=float32), 'mix-barkspectrum': array(0.36498576, dtype=float32), 'net_AF_loss': array(0.39449304, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00057688, dtype=float32), 'mix-crest_factor': array(0.1951793, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.127872, dtype=float32), 'net_AF_loss': array(34.365093, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.69it/s] 50%|█████     | 2/4 [00:00<00:00,  3.96it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.19it/s]100%|██████████| 4/4 [00:00<00:00,  4.09it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.158578760578036
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.000566, dtype=float32), 'mix-crest_factor': array(0.0122738, dtype=float32), 'mix-stereo_width': array(0.01259373, dtype=float32), 'mix-stereo_imbalance': array(0.00396745, dtype=float32), 'mix-barkspectrum': array(0.3649558, dtype=float32), 'net_AF_loss': array(0.3943568, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00057651, dtype=float32), 'mix-crest_factor': array(0.19511268, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.12716, dtype=float32), 'net_AF_loss': array(34.364315, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.69it/s] 50%|█████     | 2/4 [00:00<00:00,  4.34it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.09it/s]100%|██████████| 4/4 [00:00<00:00,  4.99it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.163926336369794
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00056648, dtype=float32), 'mix-crest_factor': array(0.01233393, dtype=float32), 'mix-stereo_width': array(0.01262447, dtype=float32), 'mix-stereo_imbalance': array(0.00398422, dtype=float32), 'mix-barkspectrum': array(0.3649845, dtype=float32), 'net_AF_loss': array(0.3944936, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00057688, dtype=float32), 'mix-crest_factor': array(0.1951793, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.127876, dtype=float32), 'net_AF_loss': array(34.365097, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.39it/s] 50%|█████     | 2/4 [00:00<00:00,  4.09it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.99it/s]100%|██████████| 4/4 [00:00<00:00,  4.97it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.158560056010474
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.000566, dtype=float32), 'mix-crest_factor': array(0.01228194, dtype=float32), 'mix-stereo_width': array(0.01259318, dtype=float32), 'mix-stereo_imbalance': array(0.00396855, dtype=float32), 'mix-barkspectrum': array(0.36495212, dtype=float32), 'net_AF_loss': array(0.3943618, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00057651, dtype=float32), 'mix-crest_factor': array(0.19511268, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.12716, dtype=float32), 'net_AF_loss': array(34.364315, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-2-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.62it/s] 50%|█████     | 2/4 [00:00<00:00,  3.35it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.55it/s]100%|██████████| 4/4 [00:00<00:00,  4.11it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.163925274974623
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00056648, dtype=float32), 'mix-crest_factor': array(0.01233463, dtype=float32), 'mix-stereo_width': array(0.01262475, dtype=float32), 'mix-stereo_imbalance': array(0.00398359, dtype=float32), 'mix-barkspectrum': array(0.36498645, dtype=float32), 'net_AF_loss': array(0.3944959, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -22.846572331908995
+{'track_start_idx': 3704400, 'track_stop_idx': 4145400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00057688, dtype=float32), 'mix-crest_factor': array(0.1951793, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.127872, dtype=float32), 'net_AF_loss': array(34.365093, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.32it/s] 50%|█████     | 2/4 [00:00<00:00,  5.04it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.34it/s]100%|██████████| 4/4 [00:00<00:00,  5.38it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.289381709374352
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(4.415435e-05, dtype=float32), 'mix-crest_factor': array(0.00153272, dtype=float32), 'mix-stereo_width': array(0.02792557, dtype=float32), 'mix-stereo_imbalance': array(0.00039417, dtype=float32), 'mix-barkspectrum': array(0.38332504, dtype=float32), 'net_AF_loss': array(0.41322166, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00042457, dtype=float32), 'mix-crest_factor': array(0.05322466, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.100094, dtype=float32), 'net_AF_loss': array(34.19521, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.63it/s] 50%|█████     | 2/4 [00:00<00:00,  4.91it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.12it/s]100%|██████████| 4/4 [00:00<00:00,  5.93it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.304468173708173
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(4.456434e-05, dtype=float32), 'mix-crest_factor': array(0.00152119, dtype=float32), 'mix-stereo_width': array(0.02788835, dtype=float32), 'mix-stereo_imbalance': array(0.0004066, dtype=float32), 'mix-barkspectrum': array(0.38247326, dtype=float32), 'net_AF_loss': array(0.41233397, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.0004249, dtype=float32), 'mix-crest_factor': array(0.05325961, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.100815, dtype=float32), 'net_AF_loss': array(34.195965, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.19it/s] 50%|█████     | 2/4 [00:00<00:00,  5.48it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.44it/s]100%|██████████| 4/4 [00:00<00:00,  6.23it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.290821083849618
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(4.4167162e-05, dtype=float32), 'mix-crest_factor': array(0.00152898, dtype=float32), 'mix-stereo_width': array(0.02792343, dtype=float32), 'mix-stereo_imbalance': array(0.00039404, dtype=float32), 'mix-barkspectrum': array(0.38319716, dtype=float32), 'net_AF_loss': array(0.4130878, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00042457, dtype=float32), 'mix-crest_factor': array(0.05322466, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.100094, dtype=float32), 'net_AF_loss': array(34.19521, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.49it/s] 50%|█████     | 2/4 [00:00<00:00,  5.38it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.68it/s]100%|██████████| 4/4 [00:00<00:00,  6.43it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.304358736096715
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(4.4558543e-05, dtype=float32), 'mix-crest_factor': array(0.00152102, dtype=float32), 'mix-stereo_width': array(0.02788878, dtype=float32), 'mix-stereo_imbalance': array(0.00040662, dtype=float32), 'mix-barkspectrum': array(0.38249108, dtype=float32), 'net_AF_loss': array(0.41235206, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.0004249, dtype=float32), 'mix-crest_factor': array(0.05325961, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.100815, dtype=float32), 'net_AF_loss': array(34.195965, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.50it/s] 50%|█████     | 2/4 [00:00<00:00,  4.94it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.18it/s]100%|██████████| 4/4 [00:00<00:00,  6.01it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.290957763794381
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(4.416909e-05, dtype=float32), 'mix-crest_factor': array(0.00153083, dtype=float32), 'mix-stereo_width': array(0.02792336, dtype=float32), 'mix-stereo_imbalance': array(0.00039408, dtype=float32), 'mix-barkspectrum': array(0.38318777, dtype=float32), 'net_AF_loss': array(0.41308022, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00042457, dtype=float32), 'mix-crest_factor': array(0.05322466, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.100094, dtype=float32), 'net_AF_loss': array(34.19521, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.12it/s] 50%|█████     | 2/4 [00:00<00:00,  4.16it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.63it/s]100%|██████████| 4/4 [00:00<00:00,  5.36it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.304157043668125
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(4.4654684e-05, dtype=float32), 'mix-crest_factor': array(0.00155939, dtype=float32), 'mix-stereo_width': array(0.02788647, dtype=float32), 'mix-stereo_imbalance': array(0.00040668, dtype=float32), 'mix-barkspectrum': array(0.38239488, dtype=float32), 'net_AF_loss': array(0.4122921, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.0004249, dtype=float32), 'mix-crest_factor': array(0.05325961, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.100815, dtype=float32), 'net_AF_loss': array(34.195965, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.84it/s] 50%|█████     | 2/4 [00:00<00:00,  5.30it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.48it/s]100%|██████████| 4/4 [00:00<00:00,  6.12it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.290863962448135
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(4.4166944e-05, dtype=float32), 'mix-crest_factor': array(0.00153035, dtype=float32), 'mix-stereo_width': array(0.02792345, dtype=float32), 'mix-stereo_imbalance': array(0.00039408, dtype=float32), 'mix-barkspectrum': array(0.3831958, dtype=float32), 'net_AF_loss': array(0.41308784, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00042457, dtype=float32), 'mix-crest_factor': array(0.05322466, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.100094, dtype=float32), 'net_AF_loss': array(34.19521, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-3-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.13it/s] 50%|█████     | 2/4 [00:00<00:00,  5.39it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.03it/s]100%|██████████| 4/4 [00:00<00:00,  6.18it/s]100%|██████████| 4/4 [00:00<00:00,  5.76it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -10.304121858592831
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(4.4655244e-05, dtype=float32), 'mix-crest_factor': array(0.00155876, dtype=float32), 'mix-stereo_width': array(0.02788641, dtype=float32), 'mix-stereo_imbalance': array(0.0004066, dtype=float32), 'mix-barkspectrum': array(0.38239527, dtype=float32), 'net_AF_loss': array(0.41229168, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.690694231616714
+{'track_start_idx': 4145400, 'track_stop_idx': 4586400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.0004249, dtype=float32), 'mix-crest_factor': array(0.05325961, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.100815, dtype=float32), 'net_AF_loss': array(34.195965, dtype=float32)}
+min_AF_loss 0.2579921
+min_AF_loss_example SYQNfull-diffmst-16-track-0-ref-5-lufs--16
+track-4-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.81it/s] 50%|█████     | 2/4 [00:00<00:00,  4.55it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.00it/s]100%|██████████| 4/4 [00:00<00:00,  5.99it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.096375310136706
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00010699, dtype=float32), 'mix-crest_factor': array(0.00282845, dtype=float32), 'mix-stereo_width': array(0.02241834, dtype=float32), 'mix-stereo_imbalance': array(0.00102544, dtype=float32), 'mix-barkspectrum': array(0.22993325, dtype=float32), 'net_AF_loss': array(0.25631246, dtype=float32)}
+min_AF_loss 0.25631246
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-0-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00040386, dtype=float32), 'mix-crest_factor': array(0.03279137, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.098797, dtype=float32), 'net_AF_loss': array(34.17346, dtype=float32)}
+min_AF_loss 0.25631246
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-0-lufs--16
+track-4-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.48it/s] 50%|█████     | 2/4 [00:00<00:00,  5.14it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.22it/s]100%|██████████| 4/4 [00:00<00:00,  6.05it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.107179247376687
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00010779, dtype=float32), 'mix-crest_factor': array(0.00275578, dtype=float32), 'mix-stereo_width': array(0.0223788, dtype=float32), 'mix-stereo_imbalance': array(0.00105173, dtype=float32), 'mix-barkspectrum': array(0.22933522, dtype=float32), 'net_AF_loss': array(0.25562933, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00040417, dtype=float32), 'mix-crest_factor': array(0.03281886, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09952, dtype=float32), 'net_AF_loss': array(34.17421, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.07it/s] 50%|█████     | 2/4 [00:00<00:00,  5.25it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.86it/s]100%|██████████| 4/4 [00:00<00:00,  5.72it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.095011651189733
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00010721, dtype=float32), 'mix-crest_factor': array(0.00282962, dtype=float32), 'mix-stereo_width': array(0.02240628, dtype=float32), 'mix-stereo_imbalance': array(0.00102274, dtype=float32), 'mix-barkspectrum': array(0.22981988, dtype=float32), 'net_AF_loss': array(0.25618574, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00040386, dtype=float32), 'mix-crest_factor': array(0.03279137, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.098797, dtype=float32), 'net_AF_loss': array(34.17346, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.37it/s] 50%|█████     | 2/4 [00:00<00:00,  4.39it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.69it/s]100%|██████████| 4/4 [00:00<00:00,  5.61it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.10719814366274
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00010779, dtype=float32), 'mix-crest_factor': array(0.0027556, dtype=float32), 'mix-stereo_width': array(0.02237899, dtype=float32), 'mix-stereo_imbalance': array(0.00105188, dtype=float32), 'mix-barkspectrum': array(0.22933543, dtype=float32), 'net_AF_loss': array(0.2556297, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00040417, dtype=float32), 'mix-crest_factor': array(0.03281886, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09952, dtype=float32), 'net_AF_loss': array(34.17421, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.44it/s] 50%|█████     | 2/4 [00:00<00:00,  5.42it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.00it/s]100%|██████████| 4/4 [00:00<00:00,  6.03it/s]100%|██████████| 4/4 [00:00<00:00,  5.71it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.095063902602938
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.0001072, dtype=float32), 'mix-crest_factor': array(0.00282934, dtype=float32), 'mix-stereo_width': array(0.02240673, dtype=float32), 'mix-stereo_imbalance': array(0.00102278, dtype=float32), 'mix-barkspectrum': array(0.22982259, dtype=float32), 'net_AF_loss': array(0.25618863, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00040386, dtype=float32), 'mix-crest_factor': array(0.03279137, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.098797, dtype=float32), 'net_AF_loss': array(34.17346, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.61it/s] 50%|█████     | 2/4 [00:00<00:00,  4.52it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.72it/s]100%|██████████| 4/4 [00:00<00:00,  5.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.107487132244431
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00010774, dtype=float32), 'mix-crest_factor': array(0.00275915, dtype=float32), 'mix-stereo_width': array(0.02238225, dtype=float32), 'mix-stereo_imbalance': array(0.00105275, dtype=float32), 'mix-barkspectrum': array(0.22936828, dtype=float32), 'net_AF_loss': array(0.2556702, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00040417, dtype=float32), 'mix-crest_factor': array(0.03281886, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09952, dtype=float32), 'net_AF_loss': array(34.17421, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.87it/s] 50%|█████     | 2/4 [00:00<00:00,  4.65it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.12it/s]100%|██████████| 4/4 [00:00<00:00,  5.91it/s]100%|██████████| 4/4 [00:00<00:00,  5.49it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.095100694000173
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.0001072, dtype=float32), 'mix-crest_factor': array(0.00282965, dtype=float32), 'mix-stereo_width': array(0.02240676, dtype=float32), 'mix-stereo_imbalance': array(0.0010228, dtype=float32), 'mix-barkspectrum': array(0.22982366, dtype=float32), 'net_AF_loss': array(0.25619006, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00040386, dtype=float32), 'mix-crest_factor': array(0.03279137, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.098797, dtype=float32), 'net_AF_loss': array(34.17346, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-4-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+Skipping track 11 due to low loudness -inf.
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+torch.Size([1, 13, 262144]) torch.Size([1, 13, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.00it/s] 50%|█████     | 2/4 [00:00<00:00,  4.84it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.00it/s]100%|██████████| 4/4 [00:00<00:00,  5.74it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.109974038538212
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00010736, dtype=float32), 'mix-crest_factor': array(0.0027753, dtype=float32), 'mix-stereo_width': array(0.02240374, dtype=float32), 'mix-stereo_imbalance': array(0.00105822, dtype=float32), 'mix-barkspectrum': array(0.22956121, dtype=float32), 'net_AF_loss': array(0.25590584, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+Skipping track 1 with -inf LUFS.
+Skipping track 11 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.324866478049696
+{'track_start_idx': 4586400, 'track_stop_idx': 5027400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00040417, dtype=float32), 'mix-crest_factor': array(0.03281886, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09952, dtype=float32), 'net_AF_loss': array(34.17421, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.43it/s] 50%|█████     | 2/4 [00:00<00:00,  4.92it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.86it/s]100%|██████████| 4/4 [00:00<00:00,  6.00it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.924600296445357
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00010956, dtype=float32), 'mix-crest_factor': array(0.00206072, dtype=float32), 'mix-stereo_width': array(0.02353686, dtype=float32), 'mix-stereo_imbalance': array(0.00055312, dtype=float32), 'mix-barkspectrum': array(0.25018895, dtype=float32), 'net_AF_loss': array(0.2764492, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00041601, dtype=float32), 'mix-crest_factor': array(0.03005301, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.098404, dtype=float32), 'net_AF_loss': array(34.17034, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.63it/s] 50%|█████     | 2/4 [00:00<00:00,  4.71it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.92it/s]100%|██████████| 4/4 [00:00<00:00,  5.86it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.938287045813631
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00010986, dtype=float32), 'mix-crest_factor': array(0.00201883, dtype=float32), 'mix-stereo_width': array(0.02352387, dtype=float32), 'mix-stereo_imbalance': array(0.00057572, dtype=float32), 'mix-barkspectrum': array(0.24988392, dtype=float32), 'net_AF_loss': array(0.2761122, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00041634, dtype=float32), 'mix-crest_factor': array(0.03007935, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09913, dtype=float32), 'net_AF_loss': array(34.17109, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.26it/s] 50%|█████     | 2/4 [00:00<00:00,  4.58it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.87it/s]100%|██████████| 4/4 [00:00<00:00,  6.11it/s]100%|██████████| 4/4 [00:00<00:00,  5.47it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.925995851809049
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.0001093, dtype=float32), 'mix-crest_factor': array(0.00206815, dtype=float32), 'mix-stereo_width': array(0.02355092, dtype=float32), 'mix-stereo_imbalance': array(0.00055632, dtype=float32), 'mix-barkspectrum': array(0.2503442, dtype=float32), 'net_AF_loss': array(0.27662888, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00041601, dtype=float32), 'mix-crest_factor': array(0.03005301, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.098404, dtype=float32), 'net_AF_loss': array(34.17034, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.13it/s] 50%|█████     | 2/4 [00:00<00:00,  4.81it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.88it/s]100%|██████████| 4/4 [00:00<00:00,  5.90it/s]100%|██████████| 4/4 [00:00<00:00,  5.38it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.938404791776243
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00010985, dtype=float32), 'mix-crest_factor': array(0.00201895, dtype=float32), 'mix-stereo_width': array(0.02352483, dtype=float32), 'mix-stereo_imbalance': array(0.00057599, dtype=float32), 'mix-barkspectrum': array(0.24989326, dtype=float32), 'net_AF_loss': array(0.27612287, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00041634, dtype=float32), 'mix-crest_factor': array(0.03007935, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09913, dtype=float32), 'net_AF_loss': array(34.17109, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.95it/s] 50%|█████     | 2/4 [00:00<00:00,  5.08it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.85it/s]100%|██████████| 4/4 [00:00<00:00,  6.02it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.925141209396537
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00010945, dtype=float32), 'mix-crest_factor': array(0.00206233, dtype=float32), 'mix-stereo_width': array(0.02354348, dtype=float32), 'mix-stereo_imbalance': array(0.00055458, dtype=float32), 'mix-barkspectrum': array(0.25026536, dtype=float32), 'net_AF_loss': array(0.27653518, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00041601, dtype=float32), 'mix-crest_factor': array(0.03005301, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.098404, dtype=float32), 'net_AF_loss': array(34.17034, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.40it/s] 50%|█████     | 2/4 [00:00<00:00,  5.34it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.30it/s]100%|██████████| 4/4 [00:00<00:00,  6.13it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.936159931674286
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00011025, dtype=float32), 'mix-crest_factor': array(0.002009, dtype=float32), 'mix-stereo_width': array(0.02350329, dtype=float32), 'mix-stereo_imbalance': array(0.00057115, dtype=float32), 'mix-barkspectrum': array(0.24965031, dtype=float32), 'net_AF_loss': array(0.275844, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00041634, dtype=float32), 'mix-crest_factor': array(0.03007935, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09913, dtype=float32), 'net_AF_loss': array(34.17109, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.09it/s] 50%|█████     | 2/4 [00:00<00:00,  4.32it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.59it/s]100%|██████████| 4/4 [00:00<00:00,  5.32it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.92737268362827
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00010908, dtype=float32), 'mix-crest_factor': array(0.00207439, dtype=float32), 'mix-stereo_width': array(0.02356119, dtype=float32), 'mix-stereo_imbalance': array(0.00055856, dtype=float32), 'mix-barkspectrum': array(0.25045538, dtype=float32), 'net_AF_loss': array(0.2767586, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00041601, dtype=float32), 'mix-crest_factor': array(0.03005301, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.098404, dtype=float32), 'net_AF_loss': array(34.17034, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-5-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 1 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.67it/s] 50%|█████     | 2/4 [00:00<00:00,  5.48it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.14it/s]100%|██████████| 4/4 [00:00<00:00,  6.42it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.937751243493528
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00010997, dtype=float32), 'mix-crest_factor': array(0.00201702, dtype=float32), 'mix-stereo_width': array(0.02351807, dtype=float32), 'mix-stereo_imbalance': array(0.00057443, dtype=float32), 'mix-barkspectrum': array(0.24981526, dtype=float32), 'net_AF_loss': array(0.27603474, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.958774179612568
+{'track_start_idx': 5027400, 'track_stop_idx': 5468400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00041634, dtype=float32), 'mix-crest_factor': array(0.03007934, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.09913, dtype=float32), 'net_AF_loss': array(34.17109, dtype=float32)}
+min_AF_loss 0.25562933
+min_AF_loss_example SYQNfull-diffmst-16-track-4-ref-1-lufs--16
+track-6-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.78it/s] 50%|█████     | 2/4 [00:00<00:00,  5.60it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.35it/s]100%|██████████| 4/4 [00:00<00:00,  6.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.337106039535088
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00012798, dtype=float32), 'mix-crest_factor': array(3.338179e-05, dtype=float32), 'mix-stereo_width': array(0.02040287, dtype=float32), 'mix-stereo_imbalance': array(0.00011767, dtype=float32), 'mix-barkspectrum': array(0.21876983, dtype=float32), 'net_AF_loss': array(0.23945174, dtype=float32)}
+min_AF_loss 0.23945174
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-0-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00043716, dtype=float32), 'mix-crest_factor': array(0.03958401, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09338, dtype=float32), 'net_AF_loss': array(34.17487, dtype=float32)}
+min_AF_loss 0.23945174
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-0-lufs--16
+track-6-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.61it/s] 50%|█████     | 2/4 [00:00<00:00,  5.24it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.11it/s]100%|██████████| 4/4 [00:00<00:00,  6.34it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.34667803758759
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00012873, dtype=float32), 'mix-crest_factor': array(2.9166575e-05, dtype=float32), 'mix-stereo_width': array(0.02037743, dtype=float32), 'mix-stereo_imbalance': array(0.00011052, dtype=float32), 'mix-barkspectrum': array(0.21824257, dtype=float32), 'net_AF_loss': array(0.23888841, dtype=float32)}
+min_AF_loss 0.23888841
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-1-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00043749, dtype=float32), 'mix-crest_factor': array(0.03961419, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.094097, dtype=float32), 'net_AF_loss': array(34.175613, dtype=float32)}
+min_AF_loss 0.23888841
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-1-lufs--16
+track-6-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.52it/s] 50%|█████     | 2/4 [00:00<00:00,  5.29it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.25it/s]100%|██████████| 4/4 [00:00<00:00,  5.91it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.339457972223874
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00012757, dtype=float32), 'mix-crest_factor': array(3.6490794e-05, dtype=float32), 'mix-stereo_width': array(0.02042739, dtype=float32), 'mix-stereo_imbalance': array(0.0001136, dtype=float32), 'mix-barkspectrum': array(0.2189542, dtype=float32), 'net_AF_loss': array(0.23965925, dtype=float32)}
+min_AF_loss 0.23888841
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-1-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00043716, dtype=float32), 'mix-crest_factor': array(0.03958401, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09338, dtype=float32), 'net_AF_loss': array(34.17487, dtype=float32)}
+min_AF_loss 0.23888841
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-1-lufs--16
+track-6-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.49it/s] 50%|█████     | 2/4 [00:00<00:00,  5.56it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.15it/s]100%|██████████| 4/4 [00:00<00:00,  6.37it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.342818836109346
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00012943, dtype=float32), 'mix-crest_factor': array(2.4703899e-05, dtype=float32), 'mix-stereo_width': array(0.02033429, dtype=float32), 'mix-stereo_imbalance': array(0.00011764, dtype=float32), 'mix-barkspectrum': array(0.21790893, dtype=float32), 'net_AF_loss': array(0.23851499, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00043749, dtype=float32), 'mix-crest_factor': array(0.03961419, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.094097, dtype=float32), 'net_AF_loss': array(34.175613, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-6-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.96it/s] 50%|█████     | 2/4 [00:00<00:00,  4.90it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.72it/s]100%|██████████| 4/4 [00:00<00:00,  5.94it/s]100%|██████████| 4/4 [00:00<00:00,  5.48it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.337209089136174
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00012795, dtype=float32), 'mix-crest_factor': array(3.3598077e-05, dtype=float32), 'mix-stereo_width': array(0.02040475, dtype=float32), 'mix-stereo_imbalance': array(0.0001174, dtype=float32), 'mix-barkspectrum': array(0.21878652, dtype=float32), 'net_AF_loss': array(0.23947023, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00043716, dtype=float32), 'mix-crest_factor': array(0.03958401, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09338, dtype=float32), 'net_AF_loss': array(34.17487, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-6-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.61it/s] 50%|█████     | 2/4 [00:00<00:00,  4.50it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.79it/s]100%|██████████| 4/4 [00:00<00:00,  5.99it/s]100%|██████████| 4/4 [00:00<00:00,  5.42it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.34668786719791
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00012873, dtype=float32), 'mix-crest_factor': array(2.9141998e-05, dtype=float32), 'mix-stereo_width': array(0.02037702, dtype=float32), 'mix-stereo_imbalance': array(0.00011055, dtype=float32), 'mix-barkspectrum': array(0.21823804, dtype=float32), 'net_AF_loss': array(0.23888348, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00043749, dtype=float32), 'mix-crest_factor': array(0.03961419, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.094097, dtype=float32), 'net_AF_loss': array(34.175613, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-6-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.89it/s] 50%|█████     | 2/4 [00:00<00:00,  4.33it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.55it/s]100%|██████████| 4/4 [00:00<00:00,  5.34it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.334768307695741
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00012843, dtype=float32), 'mix-crest_factor': array(2.9924973e-05, dtype=float32), 'mix-stereo_width': array(0.02037347, dtype=float32), 'mix-stereo_imbalance': array(0.00012258, dtype=float32), 'mix-barkspectrum': array(0.21853594, dtype=float32), 'net_AF_loss': array(0.23919034, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00043716, dtype=float32), 'mix-crest_factor': array(0.03958401, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09338, dtype=float32), 'net_AF_loss': array(34.17487, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-6-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.77it/s] 50%|█████     | 2/4 [00:00<00:00,  5.43it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.53it/s]100%|██████████| 4/4 [00:00<00:00,  6.15it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.3445207744229
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00012916, dtype=float32), 'mix-crest_factor': array(2.6488528e-05, dtype=float32), 'mix-stereo_width': array(0.02034921, dtype=float32), 'mix-stereo_imbalance': array(0.00011514, dtype=float32), 'mix-barkspectrum': array(0.21801698, dtype=float32), 'net_AF_loss': array(0.23863699, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -16.55967726317829
+{'track_start_idx': 5468400, 'track_stop_idx': 5909400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00043749, dtype=float32), 'mix-crest_factor': array(0.03961418, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.094097, dtype=float32), 'net_AF_loss': array(34.175613, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.43it/s] 50%|█████     | 2/4 [00:00<00:00,  4.23it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.79it/s]100%|██████████| 4/4 [00:00<00:00,  5.60it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.998651508192856
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00015429, dtype=float32), 'mix-crest_factor': array(0.00069549, dtype=float32), 'mix-stereo_width': array(0.02020118, dtype=float32), 'mix-stereo_imbalance': array(0.00040817, dtype=float32), 'mix-barkspectrum': array(0.22064339, dtype=float32), 'net_AF_loss': array(0.24210252, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00045507, dtype=float32), 'mix-crest_factor': array(0.03125261, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09954, dtype=float32), 'net_AF_loss': array(34.172714, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.07it/s] 50%|█████     | 2/4 [00:00<00:00,  5.21it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.32it/s]100%|██████████| 4/4 [00:00<00:00,  6.09it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -14.008130641151967
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00015549, dtype=float32), 'mix-crest_factor': array(0.00072543, dtype=float32), 'mix-stereo_width': array(0.02016136, dtype=float32), 'mix-stereo_imbalance': array(0.00041679, dtype=float32), 'mix-barkspectrum': array(0.21997325, dtype=float32), 'net_AF_loss': array(0.24143232, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00045541, dtype=float32), 'mix-crest_factor': array(0.03127946, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10026, dtype=float32), 'net_AF_loss': array(34.173462, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.89it/s] 50%|█████     | 2/4 [00:00<00:00,  5.28it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.18it/s]100%|██████████| 4/4 [00:00<00:00,  5.96it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.997548412131106
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00015452, dtype=float32), 'mix-crest_factor': array(0.00070162, dtype=float32), 'mix-stereo_width': array(0.02018787, dtype=float32), 'mix-stereo_imbalance': array(0.00040488, dtype=float32), 'mix-barkspectrum': array(0.2205274, dtype=float32), 'net_AF_loss': array(0.24197629, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00045507, dtype=float32), 'mix-crest_factor': array(0.03125261, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09954, dtype=float32), 'net_AF_loss': array(34.172714, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.55it/s] 50%|█████     | 2/4 [00:00<00:00,  5.22it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.41it/s]100%|██████████| 4/4 [00:00<00:00,  6.44it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -14.009171407181668
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00015527, dtype=float32), 'mix-crest_factor': array(0.00072252, dtype=float32), 'mix-stereo_width': array(0.02017257, dtype=float32), 'mix-stereo_imbalance': array(0.00041952, dtype=float32), 'mix-barkspectrum': array(0.22006886, dtype=float32), 'net_AF_loss': array(0.24153873, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00045541, dtype=float32), 'mix-crest_factor': array(0.03127946, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10026, dtype=float32), 'net_AF_loss': array(34.173462, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.81it/s] 50%|█████     | 2/4 [00:00<00:00,  4.47it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.70it/s]100%|██████████| 4/4 [00:00<00:00,  5.71it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.999071365798178
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00015423, dtype=float32), 'mix-crest_factor': array(0.00069538, dtype=float32), 'mix-stereo_width': array(0.02020409, dtype=float32), 'mix-stereo_imbalance': array(0.00040888, dtype=float32), 'mix-barkspectrum': array(0.22065966, dtype=float32), 'net_AF_loss': array(0.24212225, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00045507, dtype=float32), 'mix-crest_factor': array(0.03125261, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09954, dtype=float32), 'net_AF_loss': array(34.172714, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.01it/s] 50%|█████     | 2/4 [00:00<00:00,  5.36it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.48it/s]100%|██████████| 4/4 [00:00<00:00,  6.31it/s]100%|██████████| 4/4 [00:00<00:00,  5.91it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -14.009217284893104
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00015526, dtype=float32), 'mix-crest_factor': array(0.0007227, dtype=float32), 'mix-stereo_width': array(0.02017272, dtype=float32), 'mix-stereo_imbalance': array(0.00041984, dtype=float32), 'mix-barkspectrum': array(0.2200687, dtype=float32), 'net_AF_loss': array(0.24153921, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00045541, dtype=float32), 'mix-crest_factor': array(0.03127946, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10026, dtype=float32), 'net_AF_loss': array(34.173462, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.97it/s] 50%|█████     | 2/4 [00:00<00:00,  5.35it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.50it/s]100%|██████████| 4/4 [00:00<00:00,  5.89it/s]100%|██████████| 4/4 [00:00<00:00,  5.67it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.997653826014387
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00015451, dtype=float32), 'mix-crest_factor': array(0.00070156, dtype=float32), 'mix-stereo_width': array(0.02018878, dtype=float32), 'mix-stereo_imbalance': array(0.0004052, dtype=float32), 'mix-barkspectrum': array(0.2205342, dtype=float32), 'net_AF_loss': array(0.24198425, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00045507, dtype=float32), 'mix-crest_factor': array(0.03125261, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09954, dtype=float32), 'net_AF_loss': array(34.172714, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-7-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 10 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.26it/s] 50%|█████     | 2/4 [00:00<00:00,  5.38it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.41it/s]100%|██████████| 4/4 [00:00<00:00,  6.12it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -14.008183031826492
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00015547, dtype=float32), 'mix-crest_factor': array(0.00072525, dtype=float32), 'mix-stereo_width': array(0.02016219, dtype=float32), 'mix-stereo_imbalance': array(0.00041695, dtype=float32), 'mix-barkspectrum': array(0.21998398, dtype=float32), 'net_AF_loss': array(0.24144384, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 10 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.678597500528607
+{'track_start_idx': 5909400, 'track_stop_idx': 6350400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00045541, dtype=float32), 'mix-crest_factor': array(0.03127945, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10026, dtype=float32), 'net_AF_loss': array(34.173462, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.80it/s] 50%|█████     | 2/4 [00:00<00:00,  4.49it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.18it/s]100%|██████████| 4/4 [00:00<00:00,  5.09it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.17053742513926
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00055755, dtype=float32), 'mix-crest_factor': array(0.00497272, dtype=float32), 'mix-stereo_width': array(0.03169102, dtype=float32), 'mix-stereo_imbalance': array(0.00904703, dtype=float32), 'mix-barkspectrum': array(0.69715804, dtype=float32), 'net_AF_loss': array(0.7434264, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00060818, dtype=float32), 'mix-crest_factor': array(0.05359773, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.13992, dtype=float32), 'net_AF_loss': array(34.23559, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.08it/s] 50%|█████     | 2/4 [00:00<00:00,  5.79it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.85it/s]100%|██████████| 4/4 [00:00<00:00,  5.82it/s]100%|██████████| 4/4 [00:00<00:00,  5.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.17662889345123
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00055802, dtype=float32), 'mix-crest_factor': array(0.00496418, dtype=float32), 'mix-stereo_width': array(0.0316554, dtype=float32), 'mix-stereo_imbalance': array(0.00899328, dtype=float32), 'mix-barkspectrum': array(0.69235194, dtype=float32), 'net_AF_loss': array(0.7385228, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00060856, dtype=float32), 'mix-crest_factor': array(0.0536328, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.14067, dtype=float32), 'net_AF_loss': array(34.236378, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.37it/s] 50%|█████     | 2/4 [00:00<00:00,  4.20it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.75it/s]100%|██████████| 4/4 [00:00<00:00,  5.55it/s]100%|██████████| 4/4 [00:00<00:00,  4.97it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.17054063672069
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00055755, dtype=float32), 'mix-crest_factor': array(0.0049725, dtype=float32), 'mix-stereo_width': array(0.03169099, dtype=float32), 'mix-stereo_imbalance': array(0.00904681, dtype=float32), 'mix-barkspectrum': array(0.6971461, dtype=float32), 'net_AF_loss': array(0.743414, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00060818, dtype=float32), 'mix-crest_factor': array(0.05359773, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.13992, dtype=float32), 'net_AF_loss': array(34.23559, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.74it/s] 50%|█████     | 2/4 [00:00<00:00,  2.72it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.28it/s]100%|██████████| 4/4 [00:01<00:00,  4.08it/s]100%|██████████| 4/4 [00:01<00:00,  3.58it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.176645196200077
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00055803, dtype=float32), 'mix-crest_factor': array(0.00496427, dtype=float32), 'mix-stereo_width': array(0.03165541, dtype=float32), 'mix-stereo_imbalance': array(0.00899333, dtype=float32), 'mix-barkspectrum': array(0.6923534, dtype=float32), 'net_AF_loss': array(0.73852444, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00060856, dtype=float32), 'mix-crest_factor': array(0.0536328, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.14067, dtype=float32), 'net_AF_loss': array(34.236378, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.21it/s] 50%|█████     | 2/4 [00:00<00:00,  3.01it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.22it/s]100%|██████████| 4/4 [00:01<00:00,  3.57it/s]100%|██████████| 4/4 [00:01<00:00,  3.40it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.170560808003497
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00055755, dtype=float32), 'mix-crest_factor': array(0.00497269, dtype=float32), 'mix-stereo_width': array(0.03169102, dtype=float32), 'mix-stereo_imbalance': array(0.00904694, dtype=float32), 'mix-barkspectrum': array(0.69715106, dtype=float32), 'net_AF_loss': array(0.7434193, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00060818, dtype=float32), 'mix-crest_factor': array(0.05359773, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.13992, dtype=float32), 'net_AF_loss': array(34.23559, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.51it/s] 50%|█████     | 2/4 [00:00<00:00,  4.59it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.24it/s]100%|██████████| 4/4 [00:00<00:00,  5.03it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.1766713383795
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00055802, dtype=float32), 'mix-crest_factor': array(0.00496363, dtype=float32), 'mix-stereo_width': array(0.03165541, dtype=float32), 'mix-stereo_imbalance': array(0.00899307, dtype=float32), 'mix-barkspectrum': array(0.69234365, dtype=float32), 'net_AF_loss': array(0.73851377, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00060856, dtype=float32), 'mix-crest_factor': array(0.0536328, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.14067, dtype=float32), 'net_AF_loss': array(34.236378, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.55it/s] 50%|█████     | 2/4 [00:00<00:00,  3.30it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.25it/s]100%|██████████| 4/4 [00:01<00:00,  3.91it/s]100%|██████████| 4/4 [00:01<00:00,  3.67it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.170536842476793
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00055756, dtype=float32), 'mix-crest_factor': array(0.00497332, dtype=float32), 'mix-stereo_width': array(0.03169084, dtype=float32), 'mix-stereo_imbalance': array(0.00904717, dtype=float32), 'mix-barkspectrum': array(0.6971366, dtype=float32), 'net_AF_loss': array(0.74340546, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00060818, dtype=float32), 'mix-crest_factor': array(0.05359773, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.13992, dtype=float32), 'net_AF_loss': array(34.23559, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-8-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+torch.Size([1, 5, 262144]) torch.Size([1, 5, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.85it/s] 50%|█████     | 2/4 [00:00<00:00,  3.59it/s] 75%|███████▌  | 3/4 [00:00<00:00,  3.22it/s]100%|██████████| 4/4 [00:01<00:00,  3.64it/s]100%|██████████| 4/4 [00:01<00:00,  3.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -8.17666967475
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00055802, dtype=float32), 'mix-crest_factor': array(0.0049642, dtype=float32), 'mix-stereo_width': array(0.03165543, dtype=float32), 'mix-stereo_imbalance': array(0.00899311, dtype=float32), 'mix-barkspectrum': array(0.69234747, dtype=float32), 'net_AF_loss': array(0.73851824, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.870400135110664
+{'track_start_idx': 6350400, 'track_stop_idx': 6791400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00060856, dtype=float32), 'mix-crest_factor': array(0.05363279, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.14067, dtype=float32), 'net_AF_loss': array(34.236378, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.78it/s] 50%|█████     | 2/4 [00:00<00:00,  2.44it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.31it/s]100%|██████████| 4/4 [00:01<00:00,  2.59it/s]100%|██████████| 4/4 [00:01<00:00,  2.53it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.946965161528061
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00060254, dtype=float32), 'mix-crest_factor': array(0.00409754, dtype=float32), 'mix-stereo_width': array(0.03250037, dtype=float32), 'mix-stereo_imbalance': array(0.0137778, dtype=float32), 'mix-barkspectrum': array(1.3371258, dtype=float32), 'net_AF_loss': array(1.3881041, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00066672, dtype=float32), 'mix-crest_factor': array(0.0222328, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.192287, dtype=float32), 'net_AF_loss': array(34.256653, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.81it/s] 50%|█████     | 2/4 [00:00<00:00,  2.89it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.66it/s]100%|██████████| 4/4 [00:01<00:00,  2.43it/s]100%|██████████| 4/4 [00:01<00:00,  2.54it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.949128577823154
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00060303, dtype=float32), 'mix-crest_factor': array(0.00410048, dtype=float32), 'mix-stereo_width': array(0.03246882, dtype=float32), 'mix-stereo_imbalance': array(0.01370838, dtype=float32), 'mix-barkspectrum': array(1.3070682, dtype=float32), 'net_AF_loss': array(1.3579489, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00066713, dtype=float32), 'mix-crest_factor': array(0.02225548, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.193066, dtype=float32), 'net_AF_loss': array(34.257454, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.11it/s] 50%|█████     | 2/4 [00:00<00:00,  2.14it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.28it/s]100%|██████████| 4/4 [00:01<00:00,  2.68it/s]100%|██████████| 4/4 [00:01<00:00,  2.48it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.946987045807661
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00060254, dtype=float32), 'mix-crest_factor': array(0.0040989, dtype=float32), 'mix-stereo_width': array(0.03250035, dtype=float32), 'mix-stereo_imbalance': array(0.0137776, dtype=float32), 'mix-barkspectrum': array(1.3370599, dtype=float32), 'net_AF_loss': array(1.3880392, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00066672, dtype=float32), 'mix-crest_factor': array(0.0222328, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.192287, dtype=float32), 'net_AF_loss': array(34.256653, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.92it/s] 50%|█████     | 2/4 [00:00<00:00,  2.56it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.26it/s]100%|██████████| 4/4 [00:01<00:00,  2.61it/s]100%|██████████| 4/4 [00:01<00:00,  2.56it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.949123894428565
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00060303, dtype=float32), 'mix-crest_factor': array(0.00409994, dtype=float32), 'mix-stereo_width': array(0.03246883, dtype=float32), 'mix-stereo_imbalance': array(0.01370841, dtype=float32), 'mix-barkspectrum': array(1.3070806, dtype=float32), 'net_AF_loss': array(1.3579608, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00066713, dtype=float32), 'mix-crest_factor': array(0.02225548, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.193066, dtype=float32), 'net_AF_loss': array(34.257454, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.34it/s] 50%|█████     | 2/4 [00:00<00:00,  2.53it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.49it/s]100%|██████████| 4/4 [00:01<00:00,  2.50it/s]100%|██████████| 4/4 [00:01<00:00,  2.49it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.946942188629749
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00060255, dtype=float32), 'mix-crest_factor': array(0.00409763, dtype=float32), 'mix-stereo_width': array(0.03250033, dtype=float32), 'mix-stereo_imbalance': array(0.01377794, dtype=float32), 'mix-barkspectrum': array(1.3370719, dtype=float32), 'net_AF_loss': array(1.3880503, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00066672, dtype=float32), 'mix-crest_factor': array(0.0222328, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.192287, dtype=float32), 'net_AF_loss': array(34.256653, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.77it/s] 50%|█████     | 2/4 [00:00<00:00,  2.79it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.69it/s]100%|██████████| 4/4 [00:01<00:00,  2.69it/s]100%|██████████| 4/4 [00:01<00:00,  2.71it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.949098903775398
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00060304, dtype=float32), 'mix-crest_factor': array(0.00409977, dtype=float32), 'mix-stereo_width': array(0.0324688, dtype=float32), 'mix-stereo_imbalance': array(0.01370847, dtype=float32), 'mix-barkspectrum': array(1.3070191, dtype=float32), 'net_AF_loss': array(1.3578992, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00066713, dtype=float32), 'mix-crest_factor': array(0.02225548, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.193066, dtype=float32), 'net_AF_loss': array(34.257454, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.69it/s] 50%|█████     | 2/4 [00:00<00:00,  2.57it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.78it/s]100%|██████████| 4/4 [00:01<00:00,  3.10it/s]100%|██████████| 4/4 [00:01<00:00,  2.93it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.947015695743613
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00060254, dtype=float32), 'mix-crest_factor': array(0.00409882, dtype=float32), 'mix-stereo_width': array(0.03250038, dtype=float32), 'mix-stereo_imbalance': array(0.01377742, dtype=float32), 'mix-barkspectrum': array(1.3371011, dtype=float32), 'net_AF_loss': array(1.3880802, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00066672, dtype=float32), 'mix-crest_factor': array(0.0222328, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.192287, dtype=float32), 'net_AF_loss': array(34.256653, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-9-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+Skipping track 1 due to low loudness -inf.
+Skipping track 2 due to low loudness -inf.
+Skipping track 3 due to low loudness -inf.
+Skipping track 4 due to low loudness -inf.
+Skipping track 5 due to low loudness -inf.
+Skipping track 6 due to low loudness -inf.
+Skipping track 7 due to low loudness -inf.
+Skipping track 8 due to low loudness -inf.
+Skipping track 9 due to low loudness -inf.
+Skipping track 10 due to low loudness -inf.
+Skipping track 12 due to low loudness -inf.
+Skipping track 14 due to low loudness -inf.
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+torch.Size([1, 2, 262144]) torch.Size([1, 2, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.74it/s] 50%|█████     | 2/4 [00:00<00:00,  2.64it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.62it/s]100%|██████████| 4/4 [00:01<00:00,  2.59it/s]100%|██████████| 4/4 [00:01<00:00,  2.61it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -7.949097222905767
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00060304, dtype=float32), 'mix-crest_factor': array(0.00409983, dtype=float32), 'mix-stereo_width': array(0.0324688, dtype=float32), 'mix-stereo_imbalance': array(0.0137085, dtype=float32), 'mix-barkspectrum': array(1.3070306, dtype=float32), 'net_AF_loss': array(1.3579108, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+Skipping track 1 with -inf LUFS.
+Skipping track 2 with -inf LUFS.
+Skipping track 3 with -inf LUFS.
+Skipping track 4 with -inf LUFS.
+Skipping track 5 with -inf LUFS.
+Skipping track 6 with -inf LUFS.
+Skipping track 7 with -inf LUFS.
+Skipping track 8 with -inf LUFS.
+Skipping track 9 with -inf LUFS.
+Skipping track 10 with -inf LUFS.
+Skipping track 12 with -inf LUFS.
+Skipping track 14 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -12.649941783539157
+{'track_start_idx': 6791400, 'track_stop_idx': 7232400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00066713, dtype=float32), 'mix-crest_factor': array(0.02225548, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.193066, dtype=float32), 'net_AF_loss': array(34.257454, dtype=float32)}
+min_AF_loss 0.23851499
+min_AF_loss_example SYQNfull-diffmst-16-track-6-ref-3-lufs--16
+track-10-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.50it/s] 50%|█████     | 2/4 [00:00<00:00,  4.96it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.64it/s]100%|██████████| 4/4 [00:00<00:00,  5.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.59004929961106
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00011327, dtype=float32), 'mix-crest_factor': array(0.0003861, dtype=float32), 'mix-stereo_width': array(0.0222227, dtype=float32), 'mix-stereo_imbalance': array(0.00032198, dtype=float32), 'mix-barkspectrum': array(0.20325683, dtype=float32), 'net_AF_loss': array(0.22630087, dtype=float32)}
+min_AF_loss 0.22630087
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-0-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00041974, dtype=float32), 'mix-crest_factor': array(0.04644869, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.104618, dtype=float32), 'net_AF_loss': array(34.192955, dtype=float32)}
+min_AF_loss 0.22630087
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-0-lufs--16
+track-10-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.32it/s] 50%|█████     | 2/4 [00:00<00:00,  4.64it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.02it/s]100%|██████████| 4/4 [00:00<00:00,  5.87it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.600976097009772
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00011407, dtype=float32), 'mix-crest_factor': array(0.00037272, dtype=float32), 'mix-stereo_width': array(0.02218992, dtype=float32), 'mix-stereo_imbalance': array(0.00033843, dtype=float32), 'mix-barkspectrum': array(0.20286427, dtype=float32), 'net_AF_loss': array(0.22587942, dtype=float32)}
+min_AF_loss 0.22587942
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-1-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00042006, dtype=float32), 'mix-crest_factor': array(0.04648136, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10535, dtype=float32), 'net_AF_loss': array(34.193718, dtype=float32)}
+min_AF_loss 0.22587942
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-1-lufs--16
+track-10-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.43it/s] 50%|█████     | 2/4 [00:00<00:00,  5.01it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.32it/s]100%|██████████| 4/4 [00:00<00:00,  6.42it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.590023377678227
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00011327, dtype=float32), 'mix-crest_factor': array(0.00038603, dtype=float32), 'mix-stereo_width': array(0.02222254, dtype=float32), 'mix-stereo_imbalance': array(0.00032195, dtype=float32), 'mix-barkspectrum': array(0.20325418, dtype=float32), 'net_AF_loss': array(0.22629797, dtype=float32)}
+min_AF_loss 0.22587942
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-1-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00041974, dtype=float32), 'mix-crest_factor': array(0.04644869, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.104618, dtype=float32), 'net_AF_loss': array(34.192955, dtype=float32)}
+min_AF_loss 0.22587942
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-1-lufs--16
+track-10-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  3.95it/s] 50%|█████     | 2/4 [00:00<00:00,  4.42it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.59it/s]100%|██████████| 4/4 [00:00<00:00,  5.47it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.599812988778384
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00011424, dtype=float32), 'mix-crest_factor': array(0.00037093, dtype=float32), 'mix-stereo_width': array(0.0221808, dtype=float32), 'mix-stereo_imbalance': array(0.00033655, dtype=float32), 'mix-barkspectrum': array(0.20278719, dtype=float32), 'net_AF_loss': array(0.22578971, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00042006, dtype=float32), 'mix-crest_factor': array(0.04648136, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10535, dtype=float32), 'net_AF_loss': array(34.193718, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-10-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.55it/s] 50%|█████     | 2/4 [00:00<00:00,  5.19it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.32it/s]100%|██████████| 4/4 [00:00<00:00,  6.29it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.59005905599868
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00011326, dtype=float32), 'mix-crest_factor': array(0.00038634, dtype=float32), 'mix-stereo_width': array(0.02222314, dtype=float32), 'mix-stereo_imbalance': array(0.00032196, dtype=float32), 'mix-barkspectrum': array(0.20326395, dtype=float32), 'net_AF_loss': array(0.22630864, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00041974, dtype=float32), 'mix-crest_factor': array(0.04644869, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.104618, dtype=float32), 'net_AF_loss': array(34.192955, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-10-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.50it/s] 50%|█████     | 2/4 [00:00<00:00,  5.52it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.58it/s]100%|██████████| 4/4 [00:00<00:00,  6.76it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.60090866446109
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00011408, dtype=float32), 'mix-crest_factor': array(0.00037262, dtype=float32), 'mix-stereo_width': array(0.02218894, dtype=float32), 'mix-stereo_imbalance': array(0.00033831, dtype=float32), 'mix-barkspectrum': array(0.202857, dtype=float32), 'net_AF_loss': array(0.22587097, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00042006, dtype=float32), 'mix-crest_factor': array(0.04648136, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10535, dtype=float32), 'net_AF_loss': array(34.193718, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-10-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.95it/s] 50%|█████     | 2/4 [00:00<00:00,  5.22it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.98it/s]100%|██████████| 4/4 [00:00<00:00,  6.04it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.589945587572862
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00011329, dtype=float32), 'mix-crest_factor': array(0.00038558, dtype=float32), 'mix-stereo_width': array(0.02222143, dtype=float32), 'mix-stereo_imbalance': array(0.00032186, dtype=float32), 'mix-barkspectrum': array(0.20324288, dtype=float32), 'net_AF_loss': array(0.22628504, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00041974, dtype=float32), 'mix-crest_factor': array(0.04644869, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.104618, dtype=float32), 'net_AF_loss': array(34.192955, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-10-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+Skipping track 0 due to low loudness -inf.
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+torch.Size([1, 14, 262144]) torch.Size([1, 14, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.30it/s] 50%|█████     | 2/4 [00:00<00:00,  4.55it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.03it/s]100%|██████████| 4/4 [00:00<00:00,  5.79it/s]100%|██████████| 4/4 [00:00<00:00,  5.33it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -11.601001488113615
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00011407, dtype=float32), 'mix-crest_factor': array(0.00037255, dtype=float32), 'mix-stereo_width': array(0.02218953, dtype=float32), 'mix-stereo_imbalance': array(0.00033851, dtype=float32), 'mix-barkspectrum': array(0.20285971, dtype=float32), 'net_AF_loss': array(0.22587438, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+Skipping track 0 with -inf LUFS.
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -17.257825218205834
+{'track_start_idx': 7232400, 'track_stop_idx': 7673400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00042006, dtype=float32), 'mix-crest_factor': array(0.04648136, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.10535, dtype=float32), 'net_AF_loss': array(34.193718, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-0
+Ref loudness -16.0
+ref_lufs_db -10.262809306501948
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.41it/s] 50%|█████     | 2/4 [00:00<00:00,  4.64it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.64it/s]100%|██████████| 4/4 [00:00<00:00,  5.52it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.076368815227662
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00011827, dtype=float32), 'mix-crest_factor': array(0.00028151, dtype=float32), 'mix-stereo_width': array(0.0211252, dtype=float32), 'mix-stereo_imbalance': array(0.00062336, dtype=float32), 'mix-barkspectrum': array(0.20781584, dtype=float32), 'net_AF_loss': array(0.22996417, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 1764000, 'ref_stop_idx': 2205000, 'mix-rms': array(0.00041638, dtype=float32), 'mix-crest_factor': array(0.02659395, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09708, dtype=float32), 'net_AF_loss': array(34.165558, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-1
+Ref loudness -16.0
+ref_lufs_db -10.262008234187704
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.50it/s] 50%|█████     | 2/4 [00:00<00:00,  4.89it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.59it/s]100%|██████████| 4/4 [00:00<00:00,  5.44it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.083590953593687
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.00011969, dtype=float32), 'mix-crest_factor': array(0.00025515, dtype=float32), 'mix-stereo_width': array(0.02105681, dtype=float32), 'mix-stereo_imbalance': array(0.00063559, dtype=float32), 'mix-barkspectrum': array(0.20704785, dtype=float32), 'net_AF_loss': array(0.2291151, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 2205000, 'ref_stop_idx': 2646000, 'mix-rms': array(0.0004167, dtype=float32), 'mix-crest_factor': array(0.02661873, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.0978, dtype=float32), 'net_AF_loss': array(34.1663, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-2
+Ref loudness -16.0
+ref_lufs_db -10.262809317731564
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.47it/s] 50%|█████     | 2/4 [00:00<00:00,  4.54it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.98it/s]100%|██████████| 4/4 [00:00<00:00,  5.57it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.07370945004045
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00011863, dtype=float32), 'mix-crest_factor': array(0.00027876, dtype=float32), 'mix-stereo_width': array(0.02110555, dtype=float32), 'mix-stereo_imbalance': array(0.00061865, dtype=float32), 'mix-barkspectrum': array(0.20767426, dtype=float32), 'net_AF_loss': array(0.22979584, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 2646000, 'ref_stop_idx': 3087000, 'mix-rms': array(0.00041638, dtype=float32), 'mix-crest_factor': array(0.02659395, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09708, dtype=float32), 'net_AF_loss': array(34.165558, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-3
+Ref loudness -16.0
+ref_lufs_db -10.262008242608365
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.84it/s] 50%|█████     | 2/4 [00:00<00:00,  5.14it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.22it/s]100%|██████████| 4/4 [00:00<00:00,  5.89it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.085850999550816
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.00011935, dtype=float32), 'mix-crest_factor': array(0.00025801, dtype=float32), 'mix-stereo_width': array(0.02107666, dtype=float32), 'mix-stereo_imbalance': array(0.00064009, dtype=float32), 'mix-barkspectrum': array(0.20720409, dtype=float32), 'net_AF_loss': array(0.2292982, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3087000, 'ref_stop_idx': 3528000, 'mix-rms': array(0.0004167, dtype=float32), 'mix-crest_factor': array(0.02661873, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.0978, dtype=float32), 'net_AF_loss': array(34.1663, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-4
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.19it/s] 50%|█████     | 2/4 [00:00<00:00,  4.92it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.81it/s]100%|██████████| 4/4 [00:00<00:00,  5.79it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.076602339247744
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00011822, dtype=float32), 'mix-crest_factor': array(0.00028351, dtype=float32), 'mix-stereo_width': array(0.02112841, dtype=float32), 'mix-stereo_imbalance': array(0.00062389, dtype=float32), 'mix-barkspectrum': array(0.20784429, dtype=float32), 'net_AF_loss': array(0.22999832, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3528000, 'ref_stop_idx': 3969000, 'mix-rms': array(0.00041638, dtype=float32), 'mix-crest_factor': array(0.02659395, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857842, dtype=float32), 'mix-barkspectrum': array(34.09708, dtype=float32), 'net_AF_loss': array(34.165558, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-5
+Ref loudness -16.0
+ref_lufs_db -10.26200824541525
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.46it/s] 50%|█████     | 2/4 [00:00<00:00,  4.73it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.14it/s]100%|██████████| 4/4 [00:00<00:00,  6.10it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.084521197579813
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.00011956, dtype=float32), 'mix-crest_factor': array(0.00025632, dtype=float32), 'mix-stereo_width': array(0.0210648, dtype=float32), 'mix-stereo_imbalance': array(0.00063767, dtype=float32), 'mix-barkspectrum': array(0.20711179, dtype=float32), 'net_AF_loss': array(0.22919014, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 3969000, 'ref_stop_idx': 4410000, 'mix-rms': array(0.0004167, dtype=float32), 'mix-crest_factor': array(0.02661873, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.0978, dtype=float32), 'net_AF_loss': array(34.1663, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-6
+Ref loudness -16.0
+ref_lufs_db -10.262809312818607
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  5.23it/s] 50%|█████     | 2/4 [00:00<00:00,  4.86it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.17it/s]100%|██████████| 4/4 [00:00<00:00,  6.11it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.073793852607862
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00011862, dtype=float32), 'mix-crest_factor': array(0.00027881, dtype=float32), 'mix-stereo_width': array(0.02110645, dtype=float32), 'mix-stereo_imbalance': array(0.00061879, dtype=float32), 'mix-barkspectrum': array(0.2076863, dtype=float32), 'net_AF_loss': array(0.22980897, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 4410000, 'ref_stop_idx': 4851000, 'mix-rms': array(0.00041638, dtype=float32), 'mix-crest_factor': array(0.02659395, dtype=float32), 'mix-stereo_width': array(0.03288911, dtype=float32), 'mix-stereo_imbalance': array(0.00857841, dtype=float32), 'mix-barkspectrum': array(34.09708, dtype=float32), 'net_AF_loss': array(34.165558, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+track-11-ref-7
+Ref loudness -16.0
+ref_lufs_db -10.26200823208254
+diffmst-16
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+torch.Size([1, 15, 262144]) torch.Size([1, 15, 441000])
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.79it/s] 50%|█████     | 2/4 [00:00<00:00,  4.82it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.81it/s]100%|██████████| 4/4 [00:00<00:00,  5.78it/s]
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -13.08447157545094
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.00011956, dtype=float32), 'mix-crest_factor': array(0.00025622, dtype=float32), 'mix-stereo_width': array(0.02106448, dtype=float32), 'mix-stereo_imbalance': array(0.00063741, dtype=float32), 'mix-barkspectrum': array(0.20711151, dtype=float32), 'net_AF_loss': array(0.22918916, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+sum
+pred_mix shape torch.Size([1, 2, 441000])
+pred_mix_lufs_db -15.629083924583055
+{'track_start_idx': 7673400, 'track_stop_idx': 8114400, 'ref_start_idx': 4851000, 'ref_stop_idx': 5292000, 'mix-rms': array(0.0004167, dtype=float32), 'mix-crest_factor': array(0.02661873, dtype=float32), 'mix-stereo_width': array(0.03286609, dtype=float32), 'mix-stereo_imbalance': array(0.00859883, dtype=float32), 'mix-barkspectrum': array(34.0978, dtype=float32), 'net_AF_loss': array(34.1663, dtype=float32)}
+min_AF_loss 0.22578971
+min_AF_loss_example SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+for SYQNfull min loss is 0.22578971087932587 corresponding to SYQNfull-diffmst-16-track-10-ref-3-lufs--16
+

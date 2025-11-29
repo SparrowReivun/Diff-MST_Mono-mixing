@@ -66,7 +66,7 @@ model:
           - 1.0  # stereo width
           - 1.0 # stereo imbalance
           - 0.1 # bark spectrum
-          - 1.0 # CLAP
+          # - 1.0 # CLAP
     
 
 
